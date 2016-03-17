@@ -1,0 +1,8 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Users/denis/angularProjects/plivaApp/plivaApp/www/lib/ionic/js/ionic.min.js",
+        "/Users/denis/angularProjects/plivaApp/plivaApp/platforms/ios/www/lib/ionic/js/ionic.min.js",
+        "/Users/denis/angularProjects/plivaApp/plivaApp/www/lib/ionic/js/ionic.js",
+        "/Users/denis/angularProjects/plivaApp/plivaApp/www/js/app.js"
+    ]
+}

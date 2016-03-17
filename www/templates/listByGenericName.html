@@ -1,0 +1,33 @@
+<ion-view title="home" class="homePage">
+   <ion-content class="my-has-header" >
+      <div class="mainContent" ng-controller="ListByGenericName">
+          
+         <div class="kocka">
+            <div class="kockaSiva">
+               <div class="simbol01">
+               </div>
+               <div class="kockaPrviTekst">
+                  gastro-<br>enterologija 
+               </div>
+            </div>
+         </div>
+          
+          
+      
+          
+         <div class="kocka" ng-repeat="p in listOfSelectedGenericItems">
+            <a href="#/product/{{p.genName}}">
+            <div class="packshotTekst">
+               {{p.genName}}
+            </div>
+            <div class="packshotList">
+               <img width="252" height="169" src="img/{{catName.photo}}" style="display: block; border: none; width: 100%;"> 
+            </div>
+            </a>
+         </div>
+          
+       
+          
+      </div>
+   </ion-content>
+</ion-view>

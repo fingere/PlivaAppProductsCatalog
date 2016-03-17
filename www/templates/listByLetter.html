@@ -1,0 +1,26 @@
+<ion-view title="ListByLetter" class="grayBg listNyLetter">
+    
+    
+  <ion-content class="my-has-header top40">
+      
+    <div class="mainContent" ng-controller="ProductCategoryContent" ng-model="listOfProductsForCat"> 
+        
+          <a href="#/product/{{final.itemname}}" ng-repeat="final in finalList">
+              
+              <div class="kocka" >
+                  
+                <div class="kockaSiva">
+                  <div class="simbol01"> </div>
+                  <div class="kockaPrviTekst"> {{final.itemname}} </div>
+                </div>
+                  
+              </div>
+              
+          </a> 
+        
+     </div>
+      
+  </ion-content>
+    
+    
+</ion-view>

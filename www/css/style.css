@@ -1,0 +1,133 @@
+/* Empty. Add your own CSS if you like */
+
+.headerDropDown {
+    float:left;
+    margin:15px 0 0 30px;
+}
+
+.mainHeader {
+    clear: both;
+    float: left;
+    position: relative;
+    z-index: 99999;
+}
+
+.my-has-header {
+    top:85px;
+}
+    
+.custom-popup-1 {
+   top: 60px !important; 
+    left: 199px !important;
+    /*top: 109px !important;*/
+    height: 168px !important;
+    width: 220px !important;
+    border-radius: 0 !important;
+}
+
+.custom-popup-2 {
+   /* top: 59px !important;*/
+     top: 60px !important; 
+    left: 328px !important;
+        height: 168px !important;
+    width: 220px !important;
+}
+
+.custom-popup-3 {
+    /*top: 59px !important;*/
+     top: 60px !important; 
+    left: 460px !important;
+        height: 168px !important;
+    width: 220px !important;
+}
+
+.dropdownPrvi {
+    margin-top: 5px !important;
+    left: 0 !important;
+    width:232px;
+}
+
+html body .popover-backdrop.active {
+   background-color:transparent !important;
+}
+
+.popover {
+    box-shadow: none !important;
+        background: none !important;
+}
+
+.dropdownPrvi h5 {
+    padding-bottom:15px;
+    color:#fff;
+}
+
+.meniDropDownPrvi{
+    padding-bottom:20px;
+}
+
+
+.custom-popup-2.popover {
+    
+}
+
+.popover .scroll-content {
+    border-radius: 0 !important;
+}
+
+.meniDropDownPrvi li {
+    line-height: 29px;
+}
+
+.mainSubmeni.popover {
+        width: 1024px;
+    left: 0 !important;
+    border-radius: 0;
+    height: 500px;
+        top: 59px !important;
+}
+
+.velikiPopup {
+    margin-top: 5px !important;
+}
+
+.velikiKolona h5 {
+    font-weight: bold;
+    font-size: 16px;
+    color:#fff;
+}
+
+.velikiPolozenaKolona img {
+    float:left;
+}
+
+.velikiPolozenaKolona {
+    height:auto;
+}
+
+.d50per img {
+    float:left;
+    width:50%;
+}
+
+.mainDesnoSadrzaj {
+    width: 100% !important;
+    height:622px !important;
+}
+
+.thirdCont a {
+    text-transform:uppercase !important;
+    
+}
+
+.searchRezults {
+    float: left;
+    width: 81%;
+}
+    
+.tabLink {
+        color: #292929;
+    font-size: 13px;
+    text-decoration: none;
+    list-style: none;
+    
+}

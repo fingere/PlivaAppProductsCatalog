@@ -1,0 +1,33 @@
+<ion-view title="List All Categories" class="listAllCatPage">
+   <ion-content class="my-has-header" >
+      <div class="mainContent" ng-controller="ListAllCategories" ng-model="finalListOfCath">
+          
+         <div class="kocka">
+            <div class="kockaSiva">
+               <div class="simbol01">
+               </div>
+               <div class="kockaPrviTekst">
+                  KATEGORIJE
+               </div>
+            </div>
+         </div>
+          
+          
+      
+          
+         <div class="kocka" ng-repeat="p in listOfAllCategories | unique: 'catName'">
+            <a href="#/category/{{p.catName}}">
+            <div class="packshotTekst">
+               {{p.catName}}
+            </div>
+            <div class="packshotList">
+               <img width="252" height="169" src="img/{{catName.photo}}" style="display: block; border: none; width: 100%;"> 
+            </div>
+            </a>
+         </div>
+          
+       
+          
+      </div>
+   </ion-content>
+</ion-view>
