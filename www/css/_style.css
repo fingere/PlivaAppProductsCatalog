@@ -2,7 +2,7 @@
 
 .headerDropDown {
     float:left;
-    margin:0 0 0 40px;
+    margin:15px 0 0 30px;
 }
 
 .mainHeader {
@@ -10,7 +10,6 @@
     float: left;
     position: relative;
     z-index: 99999;
-	background-color: #fff;
 }
 
 .my-has-header {
@@ -19,17 +18,19 @@
     
 .custom-popup-1 {
    top: 60px !important; 
+    left: 199px !important;
     /*top: 109px !important;*/
-	left: 159px !important;
-    width: 250px !important;
+    height: 168px !important;
+    width: 220px !important;
     border-radius: 0 !important;
 }
 
 .custom-popup-2 {
    /* top: 59px !important;*/
-    top: 60px !important;
-    left: 307px !important;
-    width: 250px !important;
+     top: 60px !important; 
+    left: 328px !important;
+        height: 168px !important;
+    width: 220px !important;
 }
 
 .custom-popup-3 {
@@ -55,8 +56,9 @@ html body .popover-backdrop.active {
         background: none !important;
 }
 
-.dropdownPrvi h5 {    
-	color:#fff;
+.dropdownPrvi h5 {
+    padding-bottom:15px;
+    color:#fff;
 }
 
 .meniDropDownPrvi{
@@ -123,12 +125,9 @@ html body .popover-backdrop.active {
 }
     
 .tabLink {
-    color: #7f7f7f;
+        color: #292929;
     font-size: 13px;
     text-decoration: none;
     list-style: none;
-    letter-spacing: 0.4px;
-	display: table-cell;
-    vertical-align: middle;
     
 }

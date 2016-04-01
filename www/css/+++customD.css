@@ -274,7 +274,7 @@ img {
 	border: thin solid #ececec;
 }
 .kocka a {
-text-decoration:none;
+text-decoration:none;	
 }
 .kockaSiva {
 	position: relative;
@@ -334,7 +334,7 @@ text-decoration:none;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
-
+	
 }
 .simbol01 {
 	background: url(../img/imgPre/simbol01.svg) right no-repeat;
@@ -467,7 +467,7 @@ text-decoration:none;
 	margin-left: 0;
 	display: table;
 	}
-
+	
 .mainDesnoHeader ul li a {
 	color: #292929;
 	font-size: 13px;
@@ -497,58 +497,21 @@ text-decoration:none;
     color: #222222;
     margin-top: 10px;
 	}
-
-.mainDesnoSadrzaj h3 sup{
+	
+.mainDesnoSadrzaj h3 sup{ 
     font-size: 18px;
     color: #222222;
 	}
-
-.mainDesnoSadrzaj p {
+	
+.mainDesnoSadrzaj p { 
     font-size: 16px;
     color: #868686;
 	}
-
+	
 .mainDesnoSadrzaj img {
 	width: 540px;
 	height: 425px;
 	}
 .list a {
-	text-decoration:none;
-}
-
-
-body .mainTextWrapper  * {
-    color:#868686  !important;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Regular.ttf') format('truetype');
-    font-weight: normal;
-
-}
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Light.ttf') format('truetype');
-    font-weight: 200;
-}
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Black.ttf') format('truetype');
-    font-weight: 800;
-}
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Bold.ttf') format('truetype');
-    font-weight: 700;
-}
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Medium.ttf') format('truetype');
-    font-weight: 500;
-}
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Thin.ttf') format('truetype');
-    font-weight: 100;
+	text-decoration:none;	
 }

@@ -46,14 +46,14 @@
                   <ul class="headerDropDown">
                      <li ng-controller="FirstDropdown"><a href="#" class="popupDropdownPrvi" ng-click="openPopover($event)">Popis lijekova</a></li>
                      <li ng-controller="SecondDropdown"><a href="#" ng-click="openPopover($event)">Promocije</a></li>
-                     <li><a class="bez-strelice" href="#">O PLIVI</a></li>
+                     <li ng-controller="ThirdDropdown" class="thirdCont"><a href="#" ng-click="openPopover($event)">O Plivi</a></li>
                   </ul>
                   <div class="dropdownPrvi hidden">
                      <div class="gornjiTrokutPrvi"></div>
                      <h5> POPIS LIJEKOVA: </h5>
                      <ul class="meniDropDownPrvi">
                         <li><a href="#/atoz/">A-Z Abecedni popis lijekova</a></li>
-                        <li><a href="#/listallcategories/">Po <span style="text-decoration:underline;">prodajnim grupama</span></a></li>
+                        <li><a href="#/listallcategories/">Po prodajnim grupama</a></li>
                         <li><a href="#">Po generi&#x10D;kom imenu</a></li>
                      </ul>
                   </div>

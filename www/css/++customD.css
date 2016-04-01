@@ -5,7 +5,7 @@ html, body {
 	overflow: hidden;
 }
 body {
-	font-family: Roboto, sans-serif;
+	font-family: Arial, sans-serif;
 	line-height: 1.5;
 	font-size: 16px;
 	background: #fff;
@@ -15,8 +15,7 @@ body {
 	-webkit-text-size-adjust: none;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 400;
-	font-family:Roboto;
+	font-weight: normal;
 }
 p img {
 	float: left;
@@ -98,7 +97,7 @@ img {
 }
 .headerSearch {
 	float: left;
-	width: 300px;
+	width: 270px;
 	height: 85px;
 	background-color: #ffffff;
 }
@@ -147,17 +146,15 @@ img {
 
     border: none;
     background: url(../img/imgPre/search.png);
-	width: 215px;
-	height: 30px !important;
+	width: 235px;
+	height: 32px !important;
 	background-size: cover;
 	float: left;
 	margin-top: 27px;
 	padding-left: 20px !important;
     letter-spacing: 2.5px;
 	-webkit-appearance: none;
-	font-size: 11px !important;
-	padding:0;
-	padding-top:0 !important;
+
 }
 .dropdownPrvi {
 	float: left;
@@ -198,15 +195,16 @@ img {
 	padding-left: 25px;
 	clear: both;
 	float: left;
+	margin-top: 8px;
 }
 .meniDropDownPrvi li {
 	float: left;
 	list-style: none;
-	line-height: 23.5px;
+	line-height: 24px;
 }
 .meniDropDownPrvi li a {
 	color: #bdbdbd;
-	font-size: 13px;
+	font-size: 14px;
 	text-decoration: none;
 	padding-right: 15px;
 	letter-spacing: 1px;
@@ -239,7 +237,6 @@ img {
     margin-top: 0px !important;
     padding-top: 28px;
     padding-left: 25px;
-	padding-bottom: 5px;
     font-weight: bold;
     letter-spacing: 2px;
     font-size: 14px;
@@ -253,7 +250,7 @@ img {
 	font-size: 13px;
     letter-spacing: 1px;
     color: #bdbdbd;
-    line-height: 24px;
+    line-height: 26px;
 }
 .velikiPolozenaKolona {
 	float: left;
@@ -270,11 +267,8 @@ img {
 	position: relative;
 	float: left;
 	width: 256px;
-	height: 235px;
+	height: 225px;
 	border: thin solid #ececec;
-}
-.kocka a {
-text-decoration:none;
 }
 .kockaSiva {
 	position: relative;
@@ -290,14 +284,10 @@ text-decoration:none;
 	float: left;
 	position: absolute;
 	bottom: 0;
-	width: 254px;
+	width: 252px;
 	height: 170px;
 }
-.packshotList img {
-    margin: 0 auto;
-    width: 252px !important;
-}
-/*.packshotTekst {
+.packshotTekst {
 	float: left;
 	position: absolute;
 	top: 26px;
@@ -307,20 +297,6 @@ text-decoration:none;
 	color: #17234f;
 	font-weight: bold;
 	text-transform: uppercase;
-}*/
-.packshotTekst {
-    width: 254px;
-	padding: 0 5px 0 5px;
-    text-align: center;
-    font-size: 14px;
-    color: #17234f;
-    font-weight: 600;
-    text-transform: uppercase;
-    height: 65px;
-    vertical-align: middle;
-    display: table-cell;
-    text-decoration: none;
-	line-height: 130%;
 }
 .kockaPrviTekst {
 	float: left;
@@ -334,7 +310,7 @@ text-decoration:none;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
-
+	
 }
 .simbol01 {
 	background: url(../img/imgPre/simbol01.svg) right no-repeat;
@@ -402,36 +378,8 @@ text-decoration:none;
 	margin-top: 0;
 	padding: 0 !important;
 }
-
 .mainLijekoviLijevoLista li {
-    border-bottom: thin solid #ececec;
-    padding-left: 28px;
-    padding-right: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: 60px;
-    display: table;
-    width: 235px;
-}
-/*.mainLijekoviLijevoLista ul li a {
-    line-height: 16px;
-    text-decoration: none;
-    font-size: 15px;
-    margin-left: 0;
-    margin-top: 0;
-    color: #000000;
-    text-transform: uppercase;
-}*/
-.mainLijekoviLijevoLista ul li a {
-    line-height: 16px;
-    text-decoration: none;
-    font-size: 15px;
-    margin-left: 0;
-    margin-top: 0;
-    color: #000000;
-    text-transform: uppercase;
-    display: table-cell;
-    vertical-align: middle;
+    border-bottom: thin solid #ececec;	
 }
 .mainLijekoviLijevoLista ul li.active {
 	height: 60px;
@@ -440,8 +388,16 @@ text-decoration:none;
 	margin-left: 0;
 	margin-top: 0;
 }
-
-
+.mainLijekoviLijevoLista ul li a {
+	height: 60px;
+	line-height: 60px;
+	text-decoration: none;
+	font-size: 15px;
+	padding-left: 28px;
+	margin-left: 0;
+	margin-top: 0;
+	color: #000000;
+}
 .mainDesnoSadrzaj {
 	width: 719px;
 	height: 552px;
@@ -467,7 +423,7 @@ text-decoration:none;
 	margin-left: 0;
 	display: table;
 	}
-
+	
 .mainDesnoHeader ul li a {
 	color: #292929;
 	font-size: 13px;
@@ -497,58 +453,18 @@ text-decoration:none;
     color: #222222;
     margin-top: 10px;
 	}
-
-.mainDesnoSadrzaj h3 sup{
+	
+.mainDesnoSadrzaj h3 sup{ 
     font-size: 18px;
     color: #222222;
 	}
-
-.mainDesnoSadrzaj p {
+	
+.mainDesnoSadrzaj p { 
     font-size: 16px;
     color: #868686;
 	}
-
+	
 .mainDesnoSadrzaj img {
 	width: 540px;
 	height: 425px;
 	}
-.list a {
-	text-decoration:none;
-}
-
-
-body .mainTextWrapper  * {
-    color:#868686  !important;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Regular.ttf') format('truetype');
-    font-weight: normal;
-
-}
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Light.ttf') format('truetype');
-    font-weight: 200;
-}
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Black.ttf') format('truetype');
-    font-weight: 800;
-}
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Bold.ttf') format('truetype');
-    font-weight: 700;
-}
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Medium.ttf') format('truetype');
-    font-weight: 500;
-}
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Thin.ttf') format('truetype');
-    font-weight: 100;
-}

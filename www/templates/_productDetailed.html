@@ -1,0 +1,93 @@
+<ion-view title="product" class="productPage">
+   <ion-content class="my-has-header" scroll="false">
+      <div class="mainContent">
+         <div class="mainLijevo" ng-controller="ProductDetiledSidebar" >
+            <div class="mainLijevoHeader">
+               <a href="#/category/{{productCategory2}}">{{productCategory2}}</a>
+            </div>
+            <div class="mainLijekoviLijevoLista" ng-model="listOfProductsForSidemenu">
+               <ul>
+                   
+                  <li  ng-repeat="prodName in listOfProductsForSidemenu">
+                      <a href="#/product/{{prodName.productname}}">{{prodName.productname}}</a>
+                   </li>
+                   
+                
+                   
+               </ul>
+            </div>
+         </div>
+         <div class="mainDesno"  ng-controller="ProductDetailedContent">
+            <div class="mainDesnoHeader">
+               <ul>
+                  <li><div class="tabLink" ng-click="toggleFirstButt()">Terapijske <br>indikacije</div></li>
+                  <span class="sivaCrta"></span>
+                  <li class="active"><div class="tabLink" ng-click="toggleSecondButt()">Doziranje i <br>način primjene</div></li>
+                  <li><div class="tabLink" ng-click="toggleThirdButt()">Kontra-<br>indikacije</div></li>
+                  <li><div class="tabLink" ng-click="toggleForthButt()">Interakcije s <br>drugim lijekovima</div></li>
+                  <li><div class="tabLink" ng-click="toggleFifthButt()">Najčešće <br>nuspojave</div></li>
+                  <li><div class="tabLink" ng-click="toggleSixtButt()">Promo <br>materijali</div></li>
+                  <li><div class="tabLink" ng-click="toggleSeventhButt()">SmPC</div></li>
+                  <li><div class="tabLink" ng-click="toggleEightButt()">Status</div></li>
+               </ul>
+            </div>
+             <div id="tab1" ng-show="tab1vis">
+                <div class="mainDesnoSadrzaj" >
+                   <h3>1{{productName}}</h3>
+                   <div ng-bind-html="productMainText"></div>
+                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;"> 
+                </div>
+             </div>
+             <div id="tab2" ng-show="tab2vis">
+                <div class="mainDesnoSadrzaj" >
+                   <h3>2{{productName}}</h3>
+                   <div ng-bind-html="productMainText"></div>
+                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;"> 
+                </div>
+             </div>
+             <div id="tab3" ng-show="tab3vis" >
+                <div class="mainDesnoSadrzaj" >
+                   <h3>3{{productName}}</h3>
+                   <div ng-bind-html="productMainText"></div>
+                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;"> 
+                </div>
+             </div>
+             <div id="tab4" ng-show="tab4vis">
+                <div class="mainDesnoSadrzaj" >
+                   <h3>4{{productName}}</h3>
+                   <div ng-bind-html="productMainText"></div>
+                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;"> 
+                </div>
+             </div>
+             <div id="tab5" ng-show="tab5vis">
+                <div class="mainDesnoSadrzaj" >
+                   <h3>5{{productName}}</h3>
+                   <div ng-bind-html="productMainText"></div>
+                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;"> 
+                </div>
+             </div>
+             <div id="tab6" ng-show="tab6vis">
+                <div class="mainDesnoSadrzaj" >
+                   <h3>6{{productName}}</h3>
+                   <div ng-bind-html="productMainText"></div>
+                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;"> 
+                </div>
+             </div>
+             <div id="tab7" ng-show="tab7vis">
+                <div class="mainDesnoSadrzaj" >
+                   <h3>7{{productName}}</h3>
+                   <div ng-bind-html="productMainText"></div>
+                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;"> 
+                </div>
+             </div>
+             <div id="tab8" ng-show="tab8vis">
+                <div class="mainDesnoSadrzaj" >
+                   <h3>8{{productName}}</h3>
+                   <div ng-bind-html="productMainText"></div>
+                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;"> 
+                </div>
+             </div>
+         </div>
+      </div>
+   </ion-content>
+</ion-view>

@@ -7,84 +7,97 @@
             </div>
             <div class="mainLijekoviLijevoLista" ng-model="listOfProductsForSidemenu">
                <ul>
-                   
+
                   <li  ng-repeat="prodName in listOfProductsForSidemenu">
-                      <a href="#/product/{{prodName.productname}}">{{prodName.productname}}</a>
+                      <a ng-href="#/product/{{prodName.productname}}">{{prodName.productname}}</a>
                    </li>
-                   
-                
-                   
+
+
+
                </ul>
             </div>
          </div>
          <div class="mainDesno"  ng-controller="ProductDetailedContent">
             <div class="mainDesnoHeader">
                <ul>
-                  <li><div class="tabLink" ng-click="toggleFirstButt()">Terapijske <br>indikacije</div></li>
+                  <li class="{{tab1act}}"><div class="tabLink" ng-click="toggleFirstButt()">Terapijske <br>indikacije</div></li>
                   <span class="sivaCrta"></span>
-                  <li class="active"><div class="tabLink" ng-click="toggleSecondButt()">Doziranje i <br>način primjene</div></li>
-                  <li><div class="tabLink" ng-click="toggleThirdButt()">Kontra-<br>indikacije</div></li>
-                  <li><div class="tabLink" ng-click="toggleForthButt()">Interakcije s <br>drugim lijekovima</div></li>
-                  <li><div class="tabLink" ng-click="toggleFifthButt()">Najčešće <br>nuspojave</div></li>
-                  <li><div class="tabLink" ng-click="toggleSixtButt()">Promo <br>materijali</div></li>
-                  <li><div class="tabLink" ng-click="toggleSeventhButt()">SmPC</div></li>
-                  <li><div class="tabLink" ng-click="toggleEightButt()">Status</div></li>
+                  <li class="{{tab2act}}"><div class="tabLink" ng-click="toggleSecondButt()">Doziranje i <br>način primjene</div></li>
+                  <span class="sivaCrta"></span>
+                  <li  class="{{tab3act}}"><div class="tabLink" ng-click="toggleThirdButt()">Kontra-<br>indikacije</div></li>
+                  <span class="sivaCrta"></span>
+                  <li class="{{tab4act}}"><div class="tabLink" ng-click="toggleForthButt()">Interakcije s <br>drugim lijekovima</div></li>
+                  <span class="sivaCrta"></span>
+                  <li class="{{tab5act}}"><div class="tabLink" ng-click="toggleFifthButt()">Najčešće <br>nuspojave</div></li>
+                  <span class="sivaCrta"></span>
+                  <li  class="{{tab6act}}"><div class="tabLink" ng-click="toggleSixtButt()">Promo <br>materijali</div></li>
+                  <span class="sivaCrta"></span>
+                  <li  class="{{tab7act}}"><div class="tabLink" ng-click="toggleSeventhButt()">SmPC</div></li>
+                  <span class="sivaCrta"></span>
+                  <li  class="{{tab8act}}"><div class="tabLink" ng-click="toggleEightButt()">Status</div></li>
                </ul>
+            </div>
+            <div id="tab0" ng-show="tab0vis">
+               <div class="mainDesnoSadrzaj" >
+                  <h3>{{productName}}</h3>
+                  <div ng-bind-html="mainText" class="mainTextWrapper"></div>
+                  <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;">
+               </div>
             </div>
              <div id="tab1" ng-show="tab1vis">
                 <div class="mainDesnoSadrzaj" >
-                   <h3>1{{productName}}</h3>
-                   <div ng-bind-html="productMainText"></div>
-                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;"> 
+                   <h3>Terapijske indikacije</h3>
+                   <div ng-bind-html="terapijskeIndikacije" class="mainTextWrapper"></div>
+                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;">
                 </div>
              </div>
              <div id="tab2" ng-show="tab2vis">
                 <div class="mainDesnoSadrzaj" >
-                   <h3>2{{productName}}</h3>
-                   <div ng-bind-html="productMainText"></div>
-                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;"> 
+                   <h3>Doziranje i način primjene</h3>
+                   <div ng-bind-html="doziranjeINaicnPrimjene"></div>
+                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;">
                 </div>
              </div>
              <div id="tab3" ng-show="tab3vis" >
                 <div class="mainDesnoSadrzaj" >
-                   <h3>3{{productName}}</h3>
-                   <div ng-bind-html="productMainText"></div>
-                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;"> 
+                   <h3>Kontra-indikacije</h3>
+                   <div ng-bind-html="kontraindikacije" class="mainTextWrapper"></div>
+                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;">
                 </div>
              </div>
              <div id="tab4" ng-show="tab4vis">
                 <div class="mainDesnoSadrzaj" >
-                   <h3>4{{productName}}</h3>
-                   <div ng-bind-html="productMainText"></div>
-                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;"> 
+                   <h3>Interakcije s drugim lijekovima</h3>
+                   <div ng-bind-html="interakcijeSDrugimLijekovima" class="mainTextWrapper"></div>
+                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;">
                 </div>
              </div>
              <div id="tab5" ng-show="tab5vis">
                 <div class="mainDesnoSadrzaj" >
-                   <h3>5{{productName}}</h3>
-                   <div ng-bind-html="productMainText"></div>
-                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;"> 
+                   <h3>Najveće nuspojave</h3>
+                   <div ng-bind-html="najeceNuspojave" class="mainTextWrapper"></div>
+                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;">
                 </div>
              </div>
              <div id="tab6" ng-show="tab6vis">
                 <div class="mainDesnoSadrzaj" >
-                   <h3>6{{productName}}</h3>
-                   <div ng-bind-html="productMainText"></div>
-                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;"> 
+                   <h3>{{productName}}</h3>
+                   <div ng-bind-html="productMainText" class="mainTextWrapper"></div>
+                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;">
                 </div>
              </div>
              <div id="tab7" ng-show="tab7vis">
                 <div class="mainDesnoSadrzaj" >
-                   <h3>7{{productName}}</h3>
-                   <div ng-bind-html="productMainText"></div>
-                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;"> 
+                   <h3>{{productName}}</h3>
+                   <div ng-bind-html="productMainText" class="mainTextWrapper"></div>
+                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;">
                 </div>
              </div>
              <div id="tab8" ng-show="tab8vis">
                 <div class="mainDesnoSadrzaj" >
-                   <h3>8{{productName}}</h3>
-                   <div ng-bind-html="productMainText"></div>
-                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;"> 
+                   <h3>{{productName}}</h3>
+                   <div ng-bind-html="productMainText" class="mainTextWrapper"></div>
+                   <img ng-show="showImage" src="img/{{productMainPhoto}}" style="display: block; border: none;">
                 </div>
              </div>
          </div>
